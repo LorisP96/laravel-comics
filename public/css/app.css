@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  height: 130px;
+}
+
+header .flex-between {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+header .flex-between .logo > img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .flex-between ul {
+  width: 60%;
+  height: 100%;
+}
+
+header .flex-between ul li {
+  text-align: center;
+  height: 100%;
+  line-height: 130px;
+}
+
+header .flex-between ul li a {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+header .flex-between ul li.current {
+  border-bottom: 7px solid #0c7cec;
+  color: #0c7cec;
+}
+
+.jumbo {
+  width: 100%;
+  aspect-ratio: 4/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbo .series-cont {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.jumbo .series-cont h4 {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  color: white;
+  background-color: #0c7cec;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+section {
+  padding: 40px 0;
+  background-color: #303030;
+  width: 100%;
+}
+
+section .content-container {
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section .content-container .button-cont {
+  width: 100%;
+  text-align: center;
+}
+
+section .content-container .button-cont button {
+  color: white;
+  background-color: #0c7cec;
+  padding: 12px 35px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.card {
+  width: calc(16.6666666667% - 10px);
+  margin: 5px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.card .card-name {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
