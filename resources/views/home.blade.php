@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    @include('partials.header');
+    @include('partials.header')
     <main>
         <!-- MAIN CONTENT -->
         <section>
