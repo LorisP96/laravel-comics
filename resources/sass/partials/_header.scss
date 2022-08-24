@@ -1,0 +1,53 @@
+header {
+    height: 130px;
+    .flex-between {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        .logo > img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        ul {
+            width: 60%;
+            height: 100%;
+            li {
+                text-align: center;
+                height: 100%;
+                line-height: 130px;
+                a {
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+
+                &.current {
+                    border-bottom: 7px solid $brand-color;
+                    color: $brand-color;
+                }
+            }
+        }
+    }
+}
+
+.jumbo {
+    width: 100%;
+    aspect-ratio: 4/1;
+    background-image: url('/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .series-cont {
+        width: 70%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        h4 {
+            position: absolute;
+            bottom: -60px;
+            left: 0;
+            color: white;
+            background-color: $brand-color;
+            display: inline-block;
+            padding: 10px 15px;
+        }
+    }
+}

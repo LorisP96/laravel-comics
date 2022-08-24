@@ -1,0 +1,66 @@
+section {
+    padding: 40px 0;
+    background-color: $bg-main-color;
+    width: 100%;
+    .content-container {
+        color: white;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        .button-cont {
+            width: 100%;
+            text-align: center;
+            button {
+                color: white;
+                background-color: $brand-color;
+                padding: 12px 35px;
+                border: 0;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+
+        .card {
+            width: calc((100% / 6) - 10px);
+            margin: 5px;
+            img {
+                width : 100%;
+                aspect-ratio: 1/1;
+                margin: 0 auto;
+                object-fit: cover;
+                object-position: top;
+            }
+            .card-name {
+                font-size: 12px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.merch-section {
+    background-color: $brand-color;
+    .merchs-container {
+        color: white;
+        height: 150px;
+        width: 70%;
+        margin: 0 auto;
+        .merch-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .merch-img {
+                width: 60px;
+                padding: 12px;
+            }
+            .resize {
+                padding: 16px;
+            }
+        }
+    }
+}
+

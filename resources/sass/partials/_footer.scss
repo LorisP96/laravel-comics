@@ -1,0 +1,73 @@
+footer {
+    .bg-comic {
+        color: $brand-grey;
+        height: 350px;
+        background-image: url('/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+        .flex-between {
+            width: 70%;
+            margin: 0 auto;
+            height: 100%;
+    
+            .dc-logo-big {
+                width: 60%;
+                height: 100%;
+                background-image: url('/img/dc-logo-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            .footer-list {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 40%;
+                height: 100%;
+                padding: 20px 0;
+                h2 {
+                    color: white;
+                    margin: 5px 0; 
+                } 
+            }
+        }
+    }
+    .footer-bt-sec {
+        background-color: $bg-main-color;
+        .footer-bottom {
+            color: $brand-grey;
+            height: 130px;
+            width: 70%;
+            margin: 0 auto;
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                button {
+                    border: 2px solid $brand-color;
+                    background-color: $bg-main-color;
+                    color: white;
+                    padding: 15px;
+                }
+            }
+            .social {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                span {
+                    color: $brand-color;
+                    font-weight: 700;
+                    min-width: 100px;
+                    margin-right: 20px;
+                }
+                img {
+                    padding: 10px;
+                    width: 55px;
+                }
+            }
+        }
+    }
+}
