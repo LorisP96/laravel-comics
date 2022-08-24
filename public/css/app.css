@@ -41,34 +41,28 @@ a {
 header {
   height: 130px;
 }
-
 header .flex-between {
   width: 70%;
   height: 100%;
   margin: 0 auto;
 }
-
 header .flex-between .logo > img {
   width: 80%;
   margin: 0 auto;
 }
-
 header .flex-between ul {
   width: 60%;
   height: 100%;
 }
-
 header .flex-between ul li {
   text-align: center;
   height: 100%;
   line-height: 130px;
 }
-
 header .flex-between ul li a {
   font-size: 13px;
   font-weight: 700;
 }
-
 header .flex-between ul li.current {
   border-bottom: 7px solid #0c7cec;
   color: #0c7cec;
@@ -77,17 +71,16 @@ header .flex-between ul li.current {
 .jumbo {
   width: 100%;
   aspect-ratio: 4/1;
+  background-image: url("/img/jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .jumbo .series-cont {
   width: 70%;
   height: 100%;
   margin: 0 auto;
   position: relative;
 }
-
 .jumbo .series-cont h4 {
   position: absolute;
   bottom: -17px;
@@ -103,7 +96,6 @@ section {
   background-color: #303030;
   width: 100%;
 }
-
 section .content-container {
   color: white;
   width: 70%;
@@ -111,12 +103,10 @@ section .content-container {
   display: flex;
   flex-wrap: wrap;
 }
-
 section .content-container .button-cont {
   width: 100%;
   text-align: center;
 }
-
 section .content-container .button-cont button {
   color: white;
   background-color: #0c7cec;
@@ -125,13 +115,11 @@ section .content-container .button-cont button {
   font-size: 16px;
   font-weight: 700;
 }
-
-.card {
+section .content-container .card {
   width: calc(16.6666666667% - 10px);
   margin: 5px;
 }
-
-.card img {
+section .content-container .card img {
   width: 100%;
   aspect-ratio: 1/1;
   margin: 0 auto;
@@ -140,11 +128,100 @@ section .content-container .button-cont button {
   -o-object-position: top;
      object-position: top;
 }
-
-.card .card-name {
+section .content-container .card .card-name {
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
+.merch-section {
+  background-color: #0c7cec;
+}
+.merch-section .merchs-container {
+  color: white;
+  height: 150px;
+  width: 70%;
+  margin: 0 auto;
+}
+.merch-section .merchs-container .merch-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.merch-section .merchs-container .merch-card .merch-img {
+  width: 60px;
+  padding: 12px;
+}
+.merch-section .merchs-container .merch-card .resize {
+  padding: 16px;
+}
+
+footer .bg-comic {
+  color: #797979;
+  height: 350px;
+  background-image: url("/img/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .bg-comic .flex-between {
+  width: 70%;
+  margin: 0 auto;
+  height: 100%;
+}
+footer .bg-comic .flex-between .dc-logo-big {
+  width: 60%;
+  height: 100%;
+  background-image: url("/img/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .bg-comic .flex-between .footer-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 100%;
+  padding: 20px 0;
+}
+footer .bg-comic .flex-between .footer-list h2 {
+  color: white;
+  margin: 5px 0;
+}
+footer .footer-bt-sec {
+  background-color: #303030;
+}
+footer .footer-bt-sec .footer-bottom {
+  color: #797979;
+  height: 130px;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .footer-bt-sec .footer-bottom .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-bt-sec .footer-bottom .button button {
+  border: 2px solid #0c7cec;
+  background-color: #303030;
+  color: white;
+  padding: 15px;
+}
+footer .footer-bt-sec .footer-bottom .social {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+footer .footer-bt-sec .footer-bottom .social span {
+  color: #0c7cec;
+  font-weight: 700;
+  min-width: 100px;
+  margin-right: 20px;
+}
+footer .footer-bt-sec .footer-bottom .social img {
+  padding: 10px;
+  width: 55px;
+}
