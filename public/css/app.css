@@ -43,7 +43,7 @@ header .flex-between ul li.current {
 }
 .jumbo .series-cont h4 {
   position: absolute;
-  bottom: -60px;
+  bottom: -17px;
   left: 0;
   color: white;
   background-color: #0c7cec;
@@ -51,23 +51,23 @@ header .flex-between ul li.current {
   padding: 10px 15px;
 }
 
-section {
+main section {
   padding: 40px 0;
   background-color: #303030;
   width: 100%;
 }
-section .content-container {
+main section .content-container {
   color: white;
   width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
-section .content-container .button-cont {
+main section .content-container .button-cont {
   width: 100%;
   text-align: center;
 }
-section .content-container .button-cont button {
+main section .content-container .button-cont button {
   color: white;
   background-color: #0c7cec;
   padding: 12px 35px;
@@ -75,11 +75,11 @@ section .content-container .button-cont button {
   font-size: 16px;
   font-weight: 700;
 }
-section .content-container .card {
+main section .content-container .card {
   width: calc(16.6666666667% - 10px);
   margin: 5px;
 }
-section .content-container .card img {
+main section .content-container .card img {
   width: 100%;
   aspect-ratio: 1/1;
   margin: 0 auto;
@@ -88,33 +88,129 @@ section .content-container .card img {
   -o-object-position: top;
      object-position: top;
 }
-section .content-container .card .card-name {
+main section .content-container .card .card-name {
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
-.merch-section {
+main .merch-section {
   background-color: #0c7cec;
 }
-.merch-section .merchs-container {
+main .merch-section .merchs-container {
   color: white;
   height: 150px;
   width: 70%;
   margin: 0 auto;
 }
-.merch-section .merchs-container .merch-card {
+main .merch-section .merchs-container .merch-card {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.merch-section .merchs-container .merch-card .merch-img {
+main .merch-section .merchs-container .merch-card .merch-img {
   width: 60px;
   padding: 12px;
 }
-.merch-section .merchs-container .merch-card .resize {
+main .merch-section .merchs-container .merch-card .resize {
   padding: 16px;
+}
+main .bar {
+  height: 60px;
+  background-color: #0c7cec;
+}
+main .info-comic-container {
+  width: 60%;
+  margin: 30px auto;
+  background-color: white;
+  display: flex;
+  position: relative;
+}
+main .info-comic-container .desc-comic {
+  width: 70%;
+  padding-inline: 20px;
+}
+main .info-comic-container .desc-comic h1 {
+  font-size: 30px;
+}
+main .info-comic-container .desc-comic .gallery {
+  width: 150px;
+  position: absolute;
+  top: -290px;
+  border: 2px solid white;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  background-color: #00a9d9;
+}
+main .info-comic-container .desc-comic .gallery div {
+  padding: 3px 0;
+}
+main .info-comic-container .desc-comic .price {
+  height: 50px;
+  display: flex;
+  line-height: 50px;
+  background-color: #55ba59;
+  color: lightgray;
+  justify-content: space-between;
+  padding-inline: 5px;
+  margin-block: 10px;
+}
+main .info-comic-container .desc-comic .price > div:first-child {
+  padding-inline: 5px;
+  width: 70%;
+  display: flex;
+  padding-inline: 5px;
+  border-right: 1px solid black;
+  justify-content: space-between;
+}
+main .info-comic-container .desc-comic .price span {
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+}
+main .info-comic-container .desc-comic p {
+  line-height: 25px;
+}
+main .info-comic-container .adv {
+  width: 30%;
+}
+main .info-comic-container .adv h4 {
+  text-align: end;
+}
+main .spec-comic {
+  background-color: #f6f6f6;
+}
+main .spec-comic > div {
+  width: 60%;
+  margin: 0 auto;
+  align-items: flex-start;
+  line-height: 25px;
+}
+main .spec-comic > div .talent {
+  width: 60%;
+  padding-inline: 20px;
+}
+main .spec-comic > div .specs {
+  width: 40%;
+  padding-inline: 20px;
+}
+main .spec-comic > div .comic-by {
+  width: 60%;
+  color: #0c7cec;
+}
+main .spec-comic > div .by {
+  align-self: flex-start;
+}
+main .spec-comic > div h3 {
+  padding-bottom: 20px;
+}
+main .spec-comic > div .flex-between {
+  border-top: 1px solid lightgrey;
+  padding-block: 5px;
+}
+main .spec-comic > div .flex-between:last-child {
+  border-bottom: 1px solid lightgrey;
 }
 
 footer .bg-comic {

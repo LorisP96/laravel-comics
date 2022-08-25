@@ -1,64 +1,176 @@
-section {
-    padding: 40px 0;
-    background-color: $bg-main-color;
-    width: 100%;
-    .content-container {
-        color: white;
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        .button-cont {
-            width: 100%;
-            text-align: center;
-            button {
-                color: white;
-                background-color: $brand-color;
-                padding: 12px 35px;
-                border: 0;
-                font-size: 16px;
-                font-weight: 700;
+main {
+    section {
+        padding: 40px 0;
+        background-color: $bg-main-color;
+        width: 100%;
+        .content-container {
+            color: white;
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            .button-cont {
+                width: 100%;
+                text-align: center;
+                button {
+                    color: white;
+                    background-color: $brand-color;
+                    padding: 12px 35px;
+                    border: 0;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
             }
-        }
 
-        .card {
-            width: calc((100% / 6) - 10px);
-            margin: 5px;
-            img {
-                width : 100%;
-                aspect-ratio: 1/1;
-                margin: 0 auto;
-                object-fit: cover;
-                object-position: top;
-            }
-            .card-name {
-                font-size: 12px;
-                margin-top: 10px;
-                margin-bottom: 20px;
-                text-transform: uppercase;
+            .card {
+                width: calc((100% / 6) - 10px);
+                margin: 5px;
+                img {
+                    width : 100%;
+                    aspect-ratio: 1/1;
+                    margin: 0 auto;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                .card-name {
+                    font-size: 12px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
             }
         }
     }
-}
 
-.merch-section {
-    background-color: $brand-color;
-    .merchs-container {
-        color: white;
-        height: 150px;
-        width: 70%;
-        margin: 0 auto;
-        .merch-card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .merch-section {
+        background-color: $brand-color;
+        .merchs-container {
+            color: white;
+            height: 150px;
+            width: 70%;
+            margin: 0 auto;
+            .merch-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            .merch-img {
-                width: 60px;
-                padding: 12px;
+                .merch-img {
+                    width: 60px;
+                    padding: 12px;
+                }
+                .resize {
+                    padding: 16px;
+                }
             }
-            .resize {
-                padding: 16px;
+        }
+    }
+    .bar {
+        height: 60px;
+        background-color: $brand-color;
+    }
+    .info-comic-container {
+        width: 60%;
+        margin: 30px auto;
+        background-color: white;
+        display: flex;
+        position: relative;
+
+        .desc-comic {
+            width: 70%;
+            padding-inline: 20px;
+            h1 {
+                font-size: 30px;
+            }
+
+            .gallery {
+                width: 150px;
+                position: absolute;
+                top: -290px;
+                border: 2px solid white;
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                background-color: #00a9d9;
+                
+                div {
+                    padding: 3px 0;
+                }
+            }
+
+            .price {
+                height: 50px;
+                display: flex;
+                line-height: 50px;
+                background-color: #55ba59;
+                color: lightgray;
+                justify-content: space-between;
+                padding-inline: 5px;
+                margin-block: 10px;
+
+                & > div:first-child {
+                    padding-inline: 5px;
+                    width: 70%;
+                    display: flex;
+                    padding-inline: 5px;
+                    border-right: 1px solid black;
+                    justify-content: space-between;
+
+                }
+
+                span {
+                    color: white;
+                    flex-grow: 1;
+                    text-align: center;
+                }
+            }
+            p {
+                line-height: 25px;
+            }
+        }
+        .adv {
+            width: 30%;
+            h4 {
+                text-align: end;
+            }
+        }
+    }
+    .spec-comic {
+        background-color: #f6f6f6;
+        & > div {
+            width: 60%;
+            margin: 0 auto;
+            align-items: flex-start;
+            line-height: 25px;
+
+            .talent {
+                width: 60%;
+                padding-inline: 20px;
+            }
+            .specs {
+                width: 40%;
+                padding-inline: 20px;
+            }
+
+            .comic-by {
+                width: 60%;
+                color: $brand-color;
+            }
+
+            .by {
+                align-self: flex-start;
+            }
+
+            h3 {
+                padding-bottom: 20px;
+            }
+
+            .flex-between {
+                border-top: 1px solid lightgrey;
+                padding-block: 5px;
+                
+                &:last-child {
+                    border-bottom: 1px solid lightgrey;
+                }
             }
         }
     }
